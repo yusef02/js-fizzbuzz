@@ -1,0 +1,70 @@
+# js-fizzbuzz
+
+## traccia
+
+@here
+
+Ciao ragazzi,
+
+Esercizio di oggi: FizzBuzz
+
+nome repo: `js-fizzbuzz`
+
+Consegna:
+
+Scrivi un programma che stampi in console i numeri da 1 a 100,
+ma che per i multipli di 3 stampi "Fizz" al posto del numero e per i multipli di 5 stampi "Buzz".
+Per i numeri che sono sia multipli di 3 che di 5 stampi "FizzBuzz".
+
+Prima di partire a scrivere codice poniamoci qualche domanda:
+
+Come faccio a sapere se un numero è divisibile per un altro?
+
+Abbiamo visto qualcosa di particolare che possiamo usare?
+
+Consigli del giorno:
+
+- 1. Scriviamo sempre prima dei commenti in italiano per capire cosa vogliamo fare
+- 2. Proviamo ad immaginare le operazioni che vogliamo far svolgere al nostro programma così come lo faremmo "a mano"
+
+BONUS 1:
+
+Crea un container nel DOM , aggiungendo (attraverso le funzioni document.createElement() e append()) un elemento html con il numero o la stringa corretta da mostrare.
+
+BONUS 2:
+
+Applica stili differenti agli elementi aggiunti al DOM nel BONUS 1, a seconda che il valore inserito sia un numero, un fizz, un buzz o un fizzbuzz.
+
+Se sei a corto di idee per lo stile, potresti prendere spunto dallo screenshot fornito in consegna.
+Buon lavoro e buon divertimento! :faccia_leggermente_sorridente:
+
+## svolgimento
+
+- inizializzo costante e assegno elemento div creato
+- assegno classe row al div creato
+- invoco la funzione **for** per 100 cicli con incremento di 1
+
+  - inizializzo costante e assegno elemento div creato
+  - assegno classe col al div creato
+
+  - inizializzo costante e assegno elemento div creato
+  - assegno classe card al div creato
+  - imposto il colore del background dela card
+
+  - assegno il valore di _i_ al nodo di testo dell'elemento classe card
+
+  - **if** 15 è divisore del valore di _i_
+    - assegno la stringa FizzBuzz al nodo di testo dell'elemento classe card
+    - cambio il colore del background
+  - **else if** 5 è divisore del valore di _i_
+    - assegno la stringa Buzz al nodo di testo dell'elemento classe card
+    - cambio il colore del background
+  - **else if** 3 è divisore del valore di _i_
+
+    - assegno la stringa Fizz al nodo di testo dell'elemento classe card
+    - cambio il colore del background
+
+  - appendo l'elemento div con classe card all'elemento div con classe col
+  - appendo l'elemento div con classe col all elemento padre div con classe row
+
+- appendo l'elemento con classe row al elemento con classe container nel DOM
